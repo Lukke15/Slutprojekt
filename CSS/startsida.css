@@ -59,23 +59,24 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
-}
 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: blue;
   }
   
+
+}
   li {
     float: left;
   }
   
   li a {
     display: block;
-    color: white;
+    color: blue;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
