@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<link href="css/slider.css" rel="stylesheet" type="text/css" />
+    <title>Exempel 1 navigation bar</title> 
+
+    <meta charset = "utf-8" /> 
+
+    <link href = "navigation.css" rel="stylesheet" type="text/css" />   
+
+</head> 
+<h1>NBA</h1>
+<body> 
+
+<!--wrapper börjar--> 
+
+    <div class="wrapper"> 
+
+    <header class="header"> 
+
+        <h1>Min första hemsida</h1> 
+
+    </header> 
+
+    <header class="mainmenu"> 
+
+        <ul> 
+
+            <li><a href="home.html">Hem</a></li> 
+
+            <li><a href="news.html">Nyheter</a></li> 
+
+            <li><a href="contacts.html">kontakt</a></li> 
+
+            <li><a href="about.html">Om</a></li> 
+
+        </ul> 
+
+    </header> 
+
+    <div class="wrapper_2col"> 
+
+    <div class="leftcol"> 
+
+
+    </div><!--leftcol slutar--> 
+<div class="div content">
+
+<img class="mySlides" src="img/image1.jpg" alt="En bra bild" style="width: 50%;">
+<img class="mySlides" src="img/image2.jpg" alt="En exotisk bild" style="width: 50%;">
+<img class="mySlides" src="img/image3.jpg" alt="En skujt bra bild" style="width: 50%;">
+<img class="mySlides" src="img/image4.jpg" alt="En otroligt bra bild" style="width: 50%;">
+<img class="mySlides" src="img/image5.jpg" alt="En fantastisk bild" style="width: 50%;">
+
+<button class="slider-button display-left"
+
+    onclick="changeImage(-1)">&#129076;</button>
+
+   
+ <button class="slider-button display-right"
+
+    onclick="changeImage(1)">&#129078;</button>
+
+ </div>
+     <script src="js/domjs.js"></script>  
+    <div class="rightcol"> 
+
+      <p> 
+
+     
+
+      </p> 
+
+      <p><img src="img/andreas.jpg" height="300" width="201" alt="Foto" /> 
+
+      </p> 
+
+      <div class="push"></div> 
+
+    </div><!--rightcol slutar--> 
+
+    </div><!--wrapper2col slutar--> 
+
+    <footer class="footer"> 
+
+      <p>All rights reserved - &#169; Copyright</p> 
+
+    </footer> 
+
+    </div><!--wrapper slutar--> 
+    <button class="tablink" onclick="openPage('Home', this, 'red')">Home</button>
+<button class="tablink" onclick="openPage('News', this, 'green')" id="defaultOpen">News</button>
+<button class="tablink" onclick="openPage('Contact', this, 'blue')">Contact</button>
+<button class="tablink" onclick="openPage('About', this, 'orange')">About</button>
+
+<div id="Home" class="tabcontent">
+  <h3>Home</h3>
+  <p>Home is where the heart is..</p>
+</div>
+
+<div id="News" class="tabcontent">
+  <h3>News</h3>
+  <p>Some news this fine day!</p>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h3>Contact</h3>
+  <p>Get in touch, or swing by for a cup of coffee.</p>
+</div>
+
+<div id="About" class="tabcontent">
+  <h3>About</h3>
+  <p>Who we are and what we do.</p>
+</div>
+
+  </body> 
+
+</html> 
