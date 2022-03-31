@@ -6,7 +6,9 @@ img {vertical-align: middle;}
 ul{
 background-color: cadetblue;
 }
-
+li a{
+color: white;
+}
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
