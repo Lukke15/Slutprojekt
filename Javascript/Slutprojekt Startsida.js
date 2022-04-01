@@ -1,61 +1,19 @@
-"use strict";
+let slideIndex = 0;
+showSlides();
 
-var imageCounter= 1;
-
-showDiv(imageCounter);
-
-function changeImage(m) {
-
-    ShowDiv(imageCounter = imageCounter + m);
-
-}
-
-function ShowDiv (n) {
-
-    var i;
-
-    var imageArray = document.getElementsByClassName ("mySlides");
-
-    if (n > imageArray.length) { 
-
-        imageCounter = 1;
-
-}
-
-if (n < 1) {
-
-    imageCounter = imageArray.length;
-
-}
-
-for (i = 0; i < imageArray.length; i++) {
-
-    imageArray[i].style.display = "none";
-
-}
-
-imageArray[imageCounter - 1].style.display = "block";
-
-}
-  
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
   }
-
-
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
   }
-
-
-  document.getElementById(pageName).style.display = "block";
-
-
-  elmnt.style.backgroundColor = color;
-
-
-
-document.getElementById("defaultOpen").click();
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
