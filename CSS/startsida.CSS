@@ -16,9 +16,8 @@ color: white;
   margin: auto;
 }
 
-/* Caption text */
 .text {
-  color: #ad0e0e;
+  color: #7a0b0b;
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
@@ -56,21 +55,15 @@ color: white;
   animation-name: fade;
   animation-duration: 1.5s;
 }
-.h1 {
-margin-top: 6px;
-padding-top: 16px;
-color: black;
+body{
+  background-color: crimson;
 }
-
 
 @keyframes fade {
   from {opacity: .4} 
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .text {font-size: 11px}
 
   ul {
     list-style-type: none;
@@ -81,14 +74,14 @@ color: black;
   }
   
 
-}
+
   li {
     float: left;
   }
   
   li a {
     display: block;
-    color: blue;
+    color: rgb(0, 0, 0);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
