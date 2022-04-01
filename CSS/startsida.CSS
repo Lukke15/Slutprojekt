@@ -4,7 +4,7 @@ background-color: blue;}
 .mySlides {display: none;}
 img {vertical-align: middle;}
 ul{
-background-color: cadetblue;
+background-color: rgb(33, 46, 104);
 }
 li a{
 color: white;
@@ -104,3 +104,6 @@ color: black;
     top: 0;
     width: 100%;
   }
+h1{
+  text-decoration-color: red;
+}
