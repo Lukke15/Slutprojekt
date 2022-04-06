@@ -29,10 +29,16 @@ border-radius: 3px 0 0 3px;
   background-color: rgba(0,0,0,0.8);
 }
 
-.class {
+.img {
   max-width: 500px ;
   max-height: 500px;
-  align-content: center;
+  }
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
 body{
