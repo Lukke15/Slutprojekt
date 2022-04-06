@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset = "utf-8" />
+  <meta charset = "utf-8" />
 <link href = "../CSS/startsida.CSS" rel="stylesheet" type="text/css" />
 <script src="../Javascript/startsida.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -21,51 +21,24 @@
 <h1 style="text-align:center; text-decoration-color: red;">NBA</h1>
 <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 5</div>
-  <img src="IMG/img1.jpg" alt="bild"   style="width:100%">
-  <div class="text"></div>
-</div>
+  <div class="img">
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 5</div>
-  <img src="IMG/img2.jpg" alt="bild"   style="width:100%">
-  <div class="text"></div>
-</div>
+    <img class="mySlides" src="../IMG/img1.jpg" alt="NBA Basketboll" style="width: 50%;">
+    <img class="mySlides" src="../IMG/img2.jpg" alt="A good game" style="width: 50%;">
+    <img class="mySlides" src="../IMG/img3.jpg" alt="Houston Rockets vs Los Angeles Lakers" style="width: 50%;">
+    <img class="mySlides" src="../IMG/img4.jpg" alt="Kobe Bryant" style="width: 50%;">
+    <img class="mySlides" src="../IMG/img5.jpg" alt="Referee" style="width: 50%;">
+    
+    <button class="prev"
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 5</div>
-  <img src="IMG/img3.jpg" alt="bild" style="width:100%">
-  <div class="text"></div>
-</div>
+    onclick="changeImage(-1)">&#129076;</button>
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 5</div>
-  <img src="IMG/img4.jpg" alt="bild"  style="width:100%">
-  <div class="text"></div>
-</div>
+   
+ <button class="next"
 
-<div class="mySlides fade">
-  <div class="numbertext">5 / 5</div>
-  <img src="IMG/img5.jpg" alt="bild"   style="width:100%">
-  <div class="text"></div>
-
-  <a id="prev" href="#">&#8810;</a>
-  <a id="next" href="#">&#8811;</a>
+    onclick="changeImage(1)">&#129078;</button>
 
 
-
-</div>
-
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
 </div>
   </body>
 </html>
