@@ -16,13 +16,13 @@
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
-}¨
+
+}
 
 .prev {
   left: 0;
   border-radius: 3px 0 0 3px;
-  margin-left: auto;
-  margin-right: auto;
+  align-content: left;
 }
 
 .prev:hover, .next:hover {
