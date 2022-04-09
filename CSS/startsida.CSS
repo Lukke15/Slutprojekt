@@ -26,8 +26,8 @@
   
 margin-left: 300px;
 margin-right: 300px;
-width: 500px;
-size: 500px;
+max-width: 5000px;
+max-height: 5000px;
 }
 
 body{
