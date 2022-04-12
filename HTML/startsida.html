@@ -4,16 +4,33 @@
   <meta charset = "utf-8" />
 <link href = "../CSS/startsida.CSS" rel="stylesheet" type="text/css" />
 <script src="../Javascript/startsida.js"></script>
+<script src="../Javascript/dropdown.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <Title>NBA Manual</Title>
 </head>
 <body>
   <div class="meny">
   <ul>
-  <li><a href="Home.html">Home</a></li>  
+  <li><a href="startsida.html">Home</a></li>  
   <li><a href="History.html">History</a></li>   
-  <li><a href="Teams.html">Teams</a></li> 
-  <li><a href="Players.html">Players</a></li>        
+ <li></li> <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Teams</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="celtics.html">Celtics</a>
+      <a href="bulls.html">Bulls</a>
+      <a href="spurs.html">Spurs</a>
+      <a href="heat.html">Heat</a>
+      <a href="lakers.hmtl">Lakers</a>
+      <a href="warriors.html">Warriors</a>
+    </div></li>
+  </div> 
+  <li></li> <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">Players</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="lebron.hmtl">Lebron James</a>
+      <a href="michale.hmtl">Michael Jordan</a>
+    </div></li>
+  </div>          
   <li><a href="contacts.html">Contacts</a></li>
   </ul>
 </div>
@@ -27,7 +44,7 @@
     <img class="mySlides" src="../IMG/img2.jpg" alt="A good game" class= center style="width: 1000px; height: 500px; text-align: center;">
     <img class="mySlides" src="../IMG/img3.jpg" alt="Houston Rockets vs Sacramento Kings" class= center style="width: 1000px; height: 500px; text-align: center;">
     <img class="mySlides" src="../IMG/img4.jpg" alt="Kobe Bryant" class= center style="width: 1000px; height: 500px; text-align:center;">
-    <img class="mySlides" src="../IMG/img5.jpg" alt="Referee" class= center style="width: 1000px; height: 500px; text-align: center;" >
+    <img class="mySlides" src="../IMG/img5.jpg" alt="Referee" class= center style="width: 1000px; height: 500px; text-align: center;">
     
     <button class="prev"
 
