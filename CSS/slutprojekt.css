@@ -11,44 +11,40 @@
    }
    
    
+   img {
+    max-width: 100%;
+    height: auto;
+  }
    
-     ul {
+     .meny {
        list-style-type: none;
        margin: 0;
        padding: 0;
        overflow: hidden;
        background-color: blue;
        margin-bottom: 100px;
-       margin-left: 0%;
+       margin-left: -9px;
+       margin-top: -9px;
+       margin-right: -9px;
      }
      
    
-   
-     li {
-       float: left;
-     }
-     
-     li a {
+     a {
        display: block;
        color: rgb(0, 0, 0);
        text-align: center;
        padding: 14px 16px;
        text-decoration: none;
+       float: left;
      }
      
-     li a:hover {
+     a:hover {
        background-color: #111;
      }
      
-     ul {
-       position: absolute;
-       top: 0;
-       width: 100%;
-     }
-   
      h1
    {margin: 4rem;
-     margin-top: 5rem;
+     margin-top: 6rem;
    }
    
    /* Links inside the navbar */
@@ -117,7 +113,27 @@
    }
 
    .show {display:block;}
-   
   
-     
-    
+
+  @media only screen and (max-width: 600px){
+img {
+  width: 50px;
+   height: 100px;
+
+}
+
+  }
+  
+  @media only screen and (max-width: 600px){
+    body {
+      background-color: aqua;
+
+ }
+  }   
+  @media only screen and (max-width: 600px){
+    a:hover{
+      background-color: #aa1805;
+    }
+  
+  }
+  
